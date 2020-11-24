@@ -1,0 +1,48 @@
+.list-properies{
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  color:black;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0% 10% 1% 10%;
+  position: relative;
+}
+
+
+.add-description{
+  display: block;
+  position: relative;
+
+}
+.description-container{
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.description-container span{
+  position: relative;
+}
+.arrowForward, .arrowDown {
+  position: absolute;
+  left:100px;
+  top:13px;
+}
+.description-container h3{
+  margin:0px;
+  position: absolute;
+  left:5px;
+  top:10px;
+}
+.description-container .add-description {
+  display: none;
+}
+.add-description img{
+  width:500px;
+  height: 300px;
+  position: relative;
+  margin-left:70%;
+}
