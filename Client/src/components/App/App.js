@@ -14,7 +14,7 @@ const App = () =>{
   )
   useEffect(() =>{
     const getVideos = async () =>{
-      const request = await fetch('https://orangevalleycaa.org/api/videos');
+      const request = await fetch('http://localhost:4000/movies');
       const response = await request.json();
       setVideos(response);
     }
@@ -31,7 +31,7 @@ const App = () =>{
   },[searchTerm]);
   const onSearch = (event) => setSearchTerm(event.target.value);
   const searchVideos = videos.filter(video => video.name.toLowerCase().includes(searchTerm.toLowerCase()));
-
+  console.log(videos);
   return(
     <Fragment>
     <Router>
